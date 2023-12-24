@@ -1,6 +1,7 @@
-"use strict";
-function add(num1, num2) {
-    return num1 + num2;
+// 
+// JS의 문제점
+// dynamically typed
+
+function addd(var1, var2) {
+    return var1 + var2;
 }
-console.log(add(1, 2));
-console.log(add(1, '2'));
