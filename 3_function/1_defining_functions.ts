@@ -40,6 +40,41 @@ function getInfiniteParameters(...args: string[]) {
 console.log(getInfiniteParameters("이차녕", "박원빈", "라이주"));
 
 // Return Type
-function addTwoNumber(x: number, y: number) {
+function addTwoNumbers(x: number, y: number) {
   return x + y;
+}
+
+addTwoNumbers(10, 20);
+
+function randomNumber() {
+  return Math.random() > 0.5 ? 10 : "랜덤";
+}
+
+randomNumber();
+
+function subtractTwoNumbers(x: number, y: number): number {
+  return x - y;
+}
+
+const subtractTwoNumbersArrow = (x: number, y: number): number => {
+  return x - y;
+};
+
+// 특수반환타입 void / never
+
+function doNotReturn(): void {
+  console.log("no return");
+  return;
+}
+
+doNotReturn();
+
+// 반환타입이  never => 반환하는 상황자체를 만들면 안 됨.
+// 함수가 끝나지 않는 상태를 만들어 주어야 함.
+function neverEndingLoop(): never {
+  while (true) {}
+}
+
+function throwError2(): never {
+  throw Error();
 }
