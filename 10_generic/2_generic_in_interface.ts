@@ -25,3 +25,8 @@ interface DefaultGeneric<T = string>{
 const cache3: DefaultGeneric = {
     data: ['123']
 }
+
+// 아래는 number가 default가 아니므로 제너릭 형식 미지정시 오류가 남
+// const cache4: DefaultGeneric = {
+//     data: [123]
+// }
