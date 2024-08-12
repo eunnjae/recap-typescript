@@ -58,4 +58,4 @@ function instantiator<T extends {new (...args:any[]): {}}>(constructor:T,
 return new constructor(...args);
 }
 
-console.log(instantiator(Idol, 'wonbin',23))
+console.log(instantiator(Idol, 'bin',23))
